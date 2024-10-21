@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Nueva fuente -->
+    <title>Promociones</title>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif; /* Aplicamos Orbitron como fuente principal */
+        }
+        h2, h3, .font-bold {
+            font-family: 'Orbitron', sans-serif; /* Títulos en Orbitron */
+        }
+        p, a {
+            font-family: 'Roboto', sans-serif; /* Para párrafos y enlaces, una fuente más legible */
+        }
+    </style>
+  <!-- Navbar -->
+  <header class="bg-gray-800 fixed w-full top-0 z-50">
+    <nav class="container mx-auto px-6 py-3">
+      <div class="flex items-center justify-between">
+        <!-- Logo and Icon -->
+        <div class="text-white font-bold text-2xl flex items-center">
+          <i class="fas fa-gamepad mr-2"></i> <!-- Ícono de videojuegos -->
+          <a href="#">GameStore</a>
+        </div>
+        <!-- Navigation Links (for larger screens) -->
+        <div class="hidden md:block">
+          <ul class="flex items-center space-x-8">
+            <li><a href="index.html" class="text-white hover:text-blue-400">Home</a></li>
+            <li><a href="promociones.html" class="text-white hover:text-blue-400">Promociones</a></li>
+            <li><a href="juegos.html" class="text-white hover:text-blue-400">Productos</a></li>
+            <li><a href="Acerca.html" class="text-white hover:text-blue-400">Acerca De</a></li>
+            <li><a href="contacto.html" class="text-white hover:text-blue-400">Contacto</a></li>
+          </ul>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden md:hidden">
+        <ul class="mt-4 space-y-4">
+          <li><a href="index.html" class="block px-4 py-2 text-white bg-gray-700 rounded-lg hover:bg-gray-600 transition duration-300">Home</a></li>
+          <li><a href="promociones.html" class="block px-4 py-2 text-white bg-gray-700 rounded-lg hover:bg-gray-600 transition duration-300">Promociones</a></li>
+          <li><a href="juegos.html" class="block px-4 py-2 text-white bg-gray-700 rounded-lg hover:bg-gray-600 transition duration-300">Productos</a></li>
+          <li><a href="Acerca.html" class="block px-4 py-2 text-white bg-gray-700 rounded-lg hover:bg-gray-600 transition duration-300">Acerca de</a></li>
+          <li><a href="contacto.html" class="block px-4 py-2 text-white bg-gray-700 rounded-lg hover:bg-gray-600 transition duration-300">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- JavaScript -->
+  <script>
+    const menuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+  
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</head>
+<body>
+
+     <!-- Hero Section -->
+     <section class="relative text-white text-center py-52" style="background-image: url('https://radar.gr/wp-content/uploads/2023/07/230720071946_126809.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+            <h2 class="text-5xl font-bold">¡Las mejores promociones solo en GameStore!</h2>
+        </div>
+    </section>
+
+
+    <!-- Juegos-->
+    <section class="container mx-auto p-4 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Promoción 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1658512713-grand-theft-auto-v-nueva-generacion-ps5-0.jpg" alt="GTA V" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Grand Theft Auto V PS5</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 50% de descuento</p>
+                <p class="text-gray-600 line-through">$59.99</p>
+                <p class="text-green-500 text-xl">$29.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1713918865-teenage-mutant-ninja-turtles-arcade-wrath-of-the-mutants-nintendo-switch-0.webp" alt="Tortugas Ninja" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Teenage Mutant Ninja Turtles (Switch)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 30% de descuento</p>
+                <p class="text-gray-600 line-through">$49.99</p>
+                <p class="text-green-500 text-xl">$34.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1719685359-super-mario-party-jamboree-nintendo-switch-pre-orden-0.webp" alt="Super Mario Party" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Super Mario Party (Switch)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 40% de descuento</p>
+                <p class="text-gray-600 line-through">$39.99</p>
+                <p class="text-green-500 text-xl">$23.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1718230984-lego-horizon-adventures-ps5-pre-orden-0.webp" alt="Lego Horizon" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Lego Horizon Adventures (PS5)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 40% de descuento</p>
+                <p class="text-gray-600 line-through">$49.99</p>
+                <p class="text-green-500 text-xl">$29.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1718126202-sonic-x-shadow-generations-digital-deluxe-edition-ps5-pre-orden-0.webp" alt="Sonic & Shadow Generations (PS5)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Sonic & Shadow Generations (PS5)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 25% de descuento</p>
+                <p class="text-gray-600 line-through">$59.99</p>
+                <p class="text-green-500 text-xl">$44.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 6 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1714166758-slime-rancher-2-ps5-pre-orden-0.webp" alt="Slime Rancher 2 (PS5)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Slime Rancher 2 (PS5)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 30% de descuento</p>
+                <p class="text-gray-600 line-through">$49.99</p>
+                <p class="text-green-500 text-xl">$34.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 7 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1689115724-assassins-creed-mirage-ps5-pre-orden-0.jpg" alt="Assassin's Creed Mirage PS5" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Assassin's Creed Mirage (PS5)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 20% de descuento</p>
+                <p class="text-gray-600 line-through">$69.99</p>
+                <p class="text-green-500 text-xl">$55.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 8 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1675296132-gotham-knights-deluxe-ps5-0.jpg" alt="Gotham Knights Deluxe PS5" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Gotham Knights Deluxe (PS5)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 35% de descuento</p>
+                <p class="text-gray-600 line-through">$79.99</p>
+                <p class="text-green-500 text-xl">$51.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 9 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1485104359-one-piece3saint-seiya-soldiers.jpg" alt="One Piece: Pirate Warriors (PS4)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">One Piece: Pirate Warriors (PS4)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 50% de descuento</p>
+                <p class="text-gray-600 line-through">$59.99</p>
+                <p class="text-green-500 text-xl">$29.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 10 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1538845013-ride-ps3.jpeg" alt="Ride (PS3)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Ride (PS3)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 40% de descuento</p>
+                <p class="text-gray-600 line-through">$39.99</p>
+                <p class="text-green-500 text-xl">$23.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 11 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1460134548-saints-row-4-ps3.jpg" alt="Saints Row IV (PS3)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Saints Row IV (PS3)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 50% de descuento</p>
+                <p class="text-gray-600 line-through">$59.99</p>
+                <p class="text-green-500 text-xl">$29.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 12 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1600474896-riders-republic-ps4-pre-orden.jpg" alt="Riders Republic (PS4)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Riders Republic (PS4)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 45% de descuento</p>
+                <p class="text-gray-600 line-through">$49.99</p>
+                <p class="text-green-500 text-xl">$27.49</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 13 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1620930965-overcooked-2-ps4.jpg" alt="Overcooked 2 (PS4)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Overcooked 2 (PS4)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 50% de descuento</p>
+                <p class="text-gray-600 line-through">$39.99</p>
+                <p class="text-green-500 text-xl">$19.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 14 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1725400699-hitman-world-of-assassination-ps4-0.webp" alt="Hitman: World of Assassination (PS4)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">Hitman: World of Assassination (PS4)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 30% de descuento</p>
+                <p class="text-gray-600 line-through">$69.99</p>
+                <p class="text-green-500 text-xl">$48.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 15 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1683065150-lego-2k-drive-ps4-pre-orden-0.jpg" alt="LEGO 2K Drive (PS4)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">LEGO 2K Drive (PS4)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 20% de descuento</p>
+                <p class="text-gray-600 line-through">$49.99</p>
+                <p class="text-green-500 text-xl">$39.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+            <!-- Promoción 16 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl text-center">
+                <img src="https://juegodigitalecuador.com/files/images/productos/1689025875-nba-2k24-kobe-bryant-edition-ps4-pre-orden-0.jpg" alt="NBA 2K24: Kobe Bryant Edition (PS4)" class="w-60 h-72 object-cover rounded-lg mx-auto">
+                <h3 class="text-xl font-bold mt-4">NBA 2K24: Kobe Bryant Edition (PS4)</h3>
+                <p class="text-red-500 text-lg mt-2 font-semibold"><i class="fas fa-tags"></i> 30% de descuento</p>
+                <p class="text-gray-600 line-through">$69.99</p>
+                <p class="text-green-500 text-xl">$48.99</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                    <i class="fas fa-shopping-cart"></i> Comprar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+    
+  
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10 mt-14">
+  <div class="container mx-auto px-4">
+      <!-- Footer top -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center md:text-left">
+          <div>
+              <h3 class="text-xl font-bold mb-4">GameStore</h3>
+              <p class="text-gray-400">Tu tienda favorita de videojuegos. Ofrecemos lo mejor en videojuegos, ofertas exclusivas y lanzamientos especiales.</p>
+          </div>
+          <div>
+              <h3 class="text-lg font-semibold mb-4">Navegación</h3>
+              <ul class="space-y-2">
+                  <li><a href="#" class="text-gray-400 hover:text-white">Inicio</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Promociones</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Productos</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Contacto</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="text-lg font-semibold mb-4">Contáctanos</h3>
+              <ul class="space-y-2">
+                  <li class="text-gray-400">Email: soporte@gamestore.com</li>
+                  <li class="text-gray-400">Tel: +123 456 7890</li>
+                  <li class="text-gray-400">Ubicación: Pasaje, Ecuador</li>
+                </ul>
+          </div>
+      </div>
+      <!-- Social media -->
+      <div class="flex justify-center space-x-6 mb-8">
+          <a href="https://facebook.com" target="_blank" class="text-white hover:text-blue-500">
+              <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="text-white hover:text-blue-400">
+              <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="text-white hover:text-pink-600">
+              <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" class="text-white hover:text-red-500">
+              <i class="fab fa-youtube fa-2x"></i>
+          </a>
+          <a href="https://twitch.tv" target="_blank" class="text-white hover:text-purple-600">
+              <i class="fab fa-twitch fa-2x"></i>
+          </a>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center border-t border-gray-700 pt-4">
+          <p class="text-gray-500">&copy; 2024 GameStore. Todos los derechos reservados.</p>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
